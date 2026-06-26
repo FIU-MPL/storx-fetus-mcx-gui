@@ -1,7 +1,3 @@
-# -----------------------------
-# STORX Fetus MCX GUI .gitignore
-# -----------------------------
-
 # Python cache / build artifacts
 __pycache__/
 *.py[cod]
@@ -20,23 +16,13 @@ ENV/
 # IDE / editor files
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # OS files
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Logs
-*.log
-
-# Keep original CT .mat volumes
-# Recommended: track these with Git LFS if files are large.
-!volumes/
-!volumes/*.mat
-
-# Ignore generated MCX/PMCX outputs
+# Generated MCX/PMCX outputs
 mcx_export/
 batch_mcx_results/
 outputs/
@@ -51,9 +37,6 @@ results/
 *.nii
 *.nii.gz
 
-# But do not ignore source .mat files in volumes/
+# Keep original converted CT .mat volumes
+!volumes/
 !volumes/*.mat
-
-# Optional local notes/configs
-local_config.json
-source_locations.json

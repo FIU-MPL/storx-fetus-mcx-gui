@@ -2,7 +2,7 @@
 
 Python GUI for visualizing segmented pregnant-patient CT volumes, assigning optical tissue layers, selecting patient-specific source locations, running MCX/PMCX photon-transport simulations, and reviewing batch Monte Carlo results.
 
-> **Data note:** This repository should contain code only. Do not commit patient CT volumes, transformed volumes, or Monte Carlo result files unless your team has explicit approval to share them. The included `.gitignore` excludes `volumes/`, `mcx_export/`, `batch_mcx_results/`, `.mat`, `.npy`, `.npz`, and `.bin` files by default.
+> **Data note:** This repository includes converted `.mat` fetal CT label volumes in the `volumes/` folder. These files were converted from the openly available source dataset for convenience with the Python GUI. Generated MCX/PMCX outputs, transformed volumes, and batch result folders should not be committed.. Do not commit patient CT volumes, transformed volumes, or Monte Carlo result files unless your team has explicit approval to share them. The included `.gitignore` excludes `volumes/`, `mcx_export/`, `batch_mcx_results/`, `.mat`, `.npy`, `.npz`, and `.bin` files by default.
 
 ## Main features
 
